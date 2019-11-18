@@ -2,8 +2,7 @@
     position: relative;
     height: 250px;
     width: 80%;
-    margin: 50% auto auto auto;
-    transform: translateY(-100%);
+    margin: 0 auto;
 }
 
 .carousel__paragraph {
