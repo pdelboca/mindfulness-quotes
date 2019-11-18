@@ -1,48 +1,47 @@
 .vertical-center {
     position: absolute;
+    margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 
 .slidercontainer {
+  position: absolute;
   width: 100%;
-  height: 200px;
 }
 
 .sliderspot {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: gray;
-  display: inline;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:transparent;
+  border: 0px;
+  cursor: pointer;
+
 }
 
-.sliderspot:hover {
-  background-color: black;
+.sliderspot img {
+    height: 14px;
 }
 
 .spot1 {
-  margin: 85px 30px;
-  float: left;
+  left: 20px;
 }
 
 .spot2 {
-  margin: 85px 30px;
-  float: right;
+  right: 20px;
 }
 
 #sliderul {
+  padding: 0px 40px;
   list-style-type: none;
-  margin-left: 4%;
-  width: 75%;
   text-align: center;
   line-height: 40px;
   display: inline-block;
 }
 
 .slidercontent {
-  margin-top: 20px;
   font-size: 30px;
   color: #1D1F20;
 }
