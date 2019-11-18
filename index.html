@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <title>Mindfulness Quotes</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <div class="slider">
-        <div class="slidercontainer vertical-center">
-            <button class="sliderspot spot1">
-                <img src="img/back.svg" alt="">
-            </button>
-            <ul id="sliderul">
-                <li class="slidercontent"> "The purpose of meditation is to discover what your mind is like when you are no longer perpetually identified with the contents of your thoughts." <span><i> Sam Harris </i></span>  </li>
-                <li class="slidercontent"> "If you think you can stay angry for a day, or even an hour, without continually manufacturing this emotion, by thinking without knowing that you’re thinking, you are mistaken. This is an objective claim about mechanics of your own subjectivity..." <span><i> Sam Harris </i></span> </li>
+
+    <div class="carousel">
+        <button class="carousel__button carousel__button--back">
+            <img src="./img/back.svg" alt="" class="carousel__img">
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <p class="carousel__paragraph">"The purpose of meditation is to discover what your mind is like when you are no longer perpetually identified with the contents of your thoughts."</p>
+                </li>
+                <li class="carousel__slide">
+                    <p class="carousel__paragraph">"If you think you can stay angry for a day, or even an hour, without continually manufacturing this emotion, by thinking without knowing that you’re thinking, you are mistaken. This is an objective claim about mechanics of your own subjectivity..."</p>
+                </li>
             </ul>
-            <button class="sliderspot spot2">
-                <img src="img/next.svg" alt="">
-            </button>
         </div>
+
+        <button class="carousel__button carousel__button--next">
+            <img src="./img/next.svg" alt="" class="carousel__img">
+        </button>
     </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="./script.js"></script>
+
+    <script src="js/carousel.js"></script>
 
 </body>
 
