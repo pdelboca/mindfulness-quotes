@@ -23,7 +23,7 @@
    <div id="app">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item" v-for='quote in randomQuotes'>
+            <div class="carousel-item" :class="{'active': index === 0}" v-for='(quote, index) in randomQuotes'>
                 <div class="d-flex h-100 align-items-center justify-content-center">
                     <p>{{ quote }}</p>
                 </div>

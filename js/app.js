@@ -20,7 +20,3 @@ var app = new Vue({
     }
 
 })
-
-// Set carousel-item active to the first element
-var ul = document.querySelector('.carousel-inner');
-ul.children[0].setAttribute('class', 'carousel-item active')
