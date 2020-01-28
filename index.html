@@ -15,40 +15,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+   <div id="app">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item">
+            <div class="carousel-item" v-for='quote in randomQuotes'>
                 <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"The unexamined life is not worth living."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"The purpose of meditation is to discover what your mind is like when you are no longer perpetually identified with the contents of your thoughts."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"If you think you can stay angry for a day or even an hour, without continually manufacturing this emotion by thinking without knowing that you’re thinking: you are mistaken. This is an objective claim about mechanics of your own subjectivity..."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"Complete your past."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"That which is aware of sadness is not sad. The moment I get lost in thoughts however, I'm lost as everyone else."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-center">
-                    <p>"This is really a journey without a goal. The "goal" is to simply notice whatever is appearing in each moment. Not to change it, not to improve it, not to get rid of it... just notice whatever is happening on it's own."</p>
+                    <p>{{ quote }}</p>
                 </div>
             </div>
         </div>
@@ -61,6 +38,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    </div>
 </body>
-<script src="./js/randomize.js"></script>
+<script src="./js/app.js"></script>
 </html>
